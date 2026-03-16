@@ -298,11 +298,11 @@
           <script>
             const autoChangejg = document.querySelector('.auto-changejg');
             const autoChangeImagesjg = [
-                'https://1.bp.blogspot.com/-aFezn7CiPdI/Uqif5uzjpSI/AAAAAAAAAnA/EpE4YAYoW0Q/s1600/22.JPG',
-                'https://2.bp.blogspot.com/-KlpcRQbtkDc/Uqif9Z-AhGI/AAAAAAAAAn8/Y4alAcwqQGo/s1600/29.JPG',
-                'https://bookmetickets.com/static/falcon/img/stock/page/kritikaraina/6223266d04a28658f7aa3415/jenukallu__gudda_trek.jpg',
-                'https://www.holidify.com/images/cmsuploads/square/Pandavar-Gudda-1-1024x683_20200413155613.jpg'
-              
+                'https://res.cloudinary.com/svbs/image/upload/v1773664152/Jenukallu_Gudda_yellapura-4_erjfjw.jpg',
+                'https://res.cloudinary.com/svbs/image/upload/v1773664153/Jenukallu_Gudda_yellapura-5_iwqfxm.jpg',
+                'https://res.cloudinary.com/svbs/image/upload/v1773664152/Jenukallu_Gudda_yallapura-2_uxadot.jpg',
+                'https://res.cloudinary.com/svbs/image/upload/v1773664152/Jenukallu_Gudda_yallapura-1_wwcvgw.jpg'
+
         
         
         ];
@@ -311,7 +311,7 @@
             autoChangejg.src = autoChangeImagesjg[0];
             // Start interval
             setInterval(() => {
-              autoChangeIndexjg = (autoChangeIndexjg + 1) % autoChangeImagejg.length;
+              autoChangeIndexjg = (autoChangeIndexjg + 1) % autoChangeImagesjg.length;
               autoChangejg.setAttribute("src", autoChangeImagesjg[autoChangeIndexjg]);
             }, 2000);
           </script>
